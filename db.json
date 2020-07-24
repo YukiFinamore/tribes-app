@@ -1,0 +1,40 @@
+{
+  "users": [
+    { "id": 1, "name": "Yuki Finamore" },
+    { "id": 2, "name": "Jéssica Oliveira" },
+    { "id": 3, "name": "Tomo" },
+    { "id": 4, "name": "Kate" },
+    { "id": 5, "name": "Arthur Ronny" }
+  ],
+
+  "posts": [
+    { 
+    	"id": 1,
+    	"title": "Título Tópico 1", 
+    	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+    	"comments": 47,
+    	"author": { "id": 2, "name": "Jéssica Oliveira" }
+    },
+    { 
+    	"id": 2,
+    	"title": "Título Tópico 2", 
+    	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+    	"comments": 12,
+    	"author": { "id": 3, "name": "Tomo" }
+    },
+    { 
+    	"id": 3,
+    	"title": "Título Tópico 3", 
+    	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+    	"comments": 23,
+    	"author": { "id": 4, "name": "Kate" }
+    },
+    { 
+    	"id": 4,
+    	"title": "Título Tópico 4", 
+    	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+    	"comments": 10,
+    	"author": { "id": 5, "name": "Arthur Ronny" }
+    },
+  ],
+}
