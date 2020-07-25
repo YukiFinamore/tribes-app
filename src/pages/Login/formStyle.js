@@ -44,16 +44,19 @@ export const PasswordInputContainer = styled.div`
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     position: relative;
 
-    input {
-      padding-right: 60px;
-    }
-
     img {
       position: absolute;
       right: 15px;
       top: 10px;
     }
   }
+`;
+
+export const PasswordInput = styled(Input).attrs(props => ({
+  type: "password",
+}))`
+
+  padding-right: 60px;
 `;
 
 export const Message = styled.label`

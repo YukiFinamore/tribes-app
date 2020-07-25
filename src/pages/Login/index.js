@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { FormContainer, FormGroup, Label, Input, PasswordInputContainer, Message } from "./formStyle";
+import { FormContainer, FormGroup, Label, Input, PasswordInputContainer, PasswordInput, Message } from "./formStyle";
 import Button from "../../components/Button";
 import { LoginBg } from '../../styles/background'
 import { LogoContainer, FooterText } from './styles'
@@ -17,7 +17,7 @@ const Form = () => (
     <FormGroup>
       <Label>Senha</Label>
       <PasswordInputContainer>
-    	  <Input/>
+    	  <PasswordInput/>
     		<img src={eyeIcon}></img>
       </PasswordInputContainer>
 
