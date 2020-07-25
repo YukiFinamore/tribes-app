@@ -74,7 +74,7 @@ export const ListItemContainer = styled.div`
 	  justify-content: space-between;
 	  background: ${variables.bgInputGray};
 	  padding: 10px;
-	  border-radius: 8px;
+	  border-radius: 10px;
 	  margin-bottom: 5px;
 
 	  p {
