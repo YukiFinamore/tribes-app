@@ -23,7 +23,7 @@ export const TopicContainer = styled.div`
 	  justify-content: space-between;
 	  flex-direction: column;
 	  width: 100%;
-	  height: 700px;
+	  height: 570px;
 	  overflow: hidden;
 	  overflow-y: visible;
 
