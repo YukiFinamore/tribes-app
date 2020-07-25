@@ -16,5 +16,6 @@ export const Container = styled.button`
   text-transform: uppercase;
   letter-spacing: 3px;
   border-radius: 8px;
+  border: none;
   padding: 15px 0;
 `

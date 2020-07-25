@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { FormContainer, FormGroup, Label, Input, PasswordInputContainer, PasswordInput, Message } from "./formStyle";
+import { FormContainer, FormGroup, Label, Input, PasswordInputContainer, PasswordInput } from "./formStyle";
 import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 import { LoginBg } from '../../styles/background'
 import { LogoContainer, FooterText } from './styles'
 import logo from '../../assets/images/logo.png'
@@ -11,7 +12,6 @@ const Form = () => (
     <FormGroup>
       <Label htmlFor="label">Email</Label>
       <Input id="label" />
-      <Message>This is the validation message</Message>
     </FormGroup>
 
     <FormGroup>
@@ -20,13 +20,13 @@ const Form = () => (
     	  <PasswordInput/>
     		<img src={eyeIcon}></img>
       </PasswordInputContainer>
-
-      <Message>This is the validation message</Message>
     </FormGroup>
 
-    <Button>
-    	Login
-    </Button>
+    <Link to="/profile">
+      <Button>
+        Login
+      </Button>
+    </Link>
   </FormContainer>
 );
 

@@ -5,6 +5,10 @@ export const FormContainer = styled.div`
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: block;
     padding: 0 20px;
+
+    a {
+      text-decoration: none;
+    }
   }
 `;
 
@@ -57,13 +61,4 @@ export const PasswordInput = styled(Input).attrs(props => ({
 }))`
 
   padding-right: 60px;
-`;
-
-export const Message = styled.label`
-  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-    padding: 10px 0;
-    color: ${variables.fontWhite};
-    display: block;
-    font-size: 14px;
-  }
 `;
