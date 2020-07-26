@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { FormContainer, FormGroup, Label, Input, PasswordInputContainer, PasswordInput } from "./formStyle";
@@ -10,10 +10,16 @@ import logo from '../../assets/images/logo.png'
 import eyeIcon from '../../assets/images/icons/eye.png'
 
 const Form = ({signInFetching, profile, history}) => {
+  const [showPassword, setShowPassword] = useState(false)
+
   const signInUser = () => {
     signInFetching()
     history.push('/profile');
   }
+
+  const togglePassword = () => {
+    setShowPassword(!showPassword)
+  };
 
   return(
     <FormContainer>
@@ -25,8 +31,9 @@ const Form = ({signInFetching, profile, history}) => {
       <FormGroup>
         <Label>Senha</Label>
         <PasswordInputContainer>
-      	  <PasswordInput/>
-      		<img src={eyeIcon} alt="Show Password"></img>
+      	  <PasswordInput type={showPassword ? "text" : "password"}/>
+
+      		<img src={eyeIcon} alt="Show Password" onClick={() => togglePassword()}></img>
         </PasswordInputContainer>
       </FormGroup>
 

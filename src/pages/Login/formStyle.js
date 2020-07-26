@@ -51,13 +51,13 @@ export const PasswordInputContainer = styled.div`
     img {
       position: absolute;
       right: 15px;
-      top: 10px;
+      top: 15px;
     }
   }
 `;
 
 export const PasswordInput = styled(Input).attrs(props => ({
-  type: "password",
+  type: props.type
 }))`
 
   padding-right: 60px;
