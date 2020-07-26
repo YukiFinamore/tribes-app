@@ -1,32 +1,39 @@
 import React from 'react'
-import { Container, TopicBg, TopicInfos, CommentsContainer, TopicAuthor } from './styles'
+import { Container, TopicBg, TopicInfos, CommentsContainer, TopicAuthor, AvatarDefault } from './styles'
 import Avatar from "../Avatar";
-import postBg from '../../assets/images/bg/post-bg.png'
 import commentIcon from '../../assets/images/icons/comment.png'
 
-const TopicWithBg = ({}) => (
+const TopicWithBg = ({post}) => (
   <Container>
     <TopicBg>
-      <img src={postBg}></img> 
+      <img src={post.background}></img> 
     </TopicBg>
 
     <TopicInfos>
       <h2>
-        Título tópico
+        {post.title}
       </h2>
 
       <CommentsContainer>
         <img src={commentIcon}></img>
 
-        <p> 47 </p>
+        <p> {post.comments} </p>
       </CommentsContainer>
     </TopicInfos>
     
     <TopicAuthor>
-      <Avatar/>
-
+      {
+        post.author.image !== "" ? (
+          <Avatar img={post.author.image}/>    
+        ) : (
+          <AvatarDefault>
+            <p> {post.author.name.match(/\b(\w)/g).join('')} </p>
+          </AvatarDefault>
+        )
+      }
+      
       <p>
-        Jéssica Oliveira
+        {post.author.name}
       </p>
     </TopicAuthor>
   </Container>
