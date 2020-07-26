@@ -3,12 +3,11 @@ import { Container } from './styles'
 import menuIcon from '../../assets/images/icons/menu.png'
 import editIcon from '../../assets/images/icons/edit.png'
 
-
-const Header = ({}) => (
+const Header = ({title}) => (
   <Container>
-    <img src={menuIcon}></img> 
-    <p> André Silva </p>
-    <img src={editIcon}></img>
+    <img src={menuIcon} alt={"Menu"}></img> 
+    <p> {title} </p>
+    <img src={editIcon} alt={"Edit"}></img>
   </Container>
 )
 
