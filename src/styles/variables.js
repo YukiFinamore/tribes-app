@@ -10,6 +10,7 @@ const variables = {
   bgScrollGray: '#9597A1',
   bgGray: '#303134',
   bgTopic: '#191A1D',
+  bgPurple: '#6F05D6',
 }
 
 export default variables
