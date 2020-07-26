@@ -5,28 +5,32 @@
     	"title": "Título Tópico 1", 
     	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
     	"comments": 47,
-    	"author": { "id": 2, "name": "Jéssica Oliveira", "image": "https://i.imgur.com/dLoJKJN.png" }
+    	"author": { "id": 2, "name": "Jéssica Oliveira", "image": "https://i.imgur.com/dLoJKJN.png" },
+        "background": "https://i.imgur.com/W4XIQ4y.png"
     },
     { 
     	"id": 2,
     	"title": "Título Tópico 2", 
     	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
     	"comments": 12,
-    	"author": { "id": 3, "name": "Tomo", "image": "https://i.imgur.com/LH1F5u8.png" }
+    	"author": { "id": 3, "name": "Tomo", "image": "https://i.imgur.com/LH1F5u8.png" },
+        "background": ""
     },
     { 
     	"id": 3,
     	"title": "Título Tópico 3", 
     	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
     	"comments": 23,
-    	"author": { "id": 4, "name": "Kate", "image": "https://i.imgur.com/9jrJBDW.png" }
+    	"author": { "id": 4, "name": "Kate", "image": "https://i.imgur.com/9jrJBDW.png" },
+        "background": "https://i.imgur.com/W4XIQ4y.png"
     },
     { 
     	"id": 4,
     	"title": "Título Tópico 4", 
     	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
     	"comments": 10,
-    	"author": { "id": 5, "name": "Arthur Ronny", "image": "" }
+    	"author": { "id": 5, "name": "Arthur Ronny", "image": "" },
+        "background": ""
     }
   ],
 
