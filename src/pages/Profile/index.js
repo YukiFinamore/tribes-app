@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { connect } from 'react-redux'
 import Header from "../../components/Header";
 import Avatar from "../../components/Avatar";
+import Loader from "../../components/Loader";
 import { Link } from "react-router-dom";
 import { Container, AvatarContainer, CamIcon, TopicsList, ListItemContainer } from './styles'
 import { ProfileBg } from '../../styles/background'
@@ -18,29 +20,45 @@ const ListItem = () => (
   </Link>
 )
 
-export default () => (
-  <ProfileBg>
-  	<Header/>
+const Profile = ({profile}) => (
+  <>
+    {
+      profile.loading
+        ? <Loader/>
+        : 
+          <ProfileBg>
+            <Header title={profile.name}/>
 
-  	<Container>
-  		<AvatarContainer>
-  			<Avatar/>
+            <Container>
+              <AvatarContainer>
+                <Avatar img={profile.image}/>
 
-  			<CamIcon>
-  				<img src={camIcon}></img>
-  			</CamIcon>
-  		</AvatarContainer>
+                <CamIcon>
+                  <img src={camIcon}></img>
+                </CamIcon>
+              </AvatarContainer>
 
 
-  		<p> Prioridade de tópicos </p>
+              <p> Prioridade de tópicos </p>
 
-  		<TopicsList>
-				<ListItem/>
-				<ListItem/>
-				<ListItem/>
-				<ListItem/>
-				<ListItem/>
-  		</TopicsList>
-  	</Container>
-  </ProfileBg>
+              <TopicsList>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+              </TopicsList>
+            </Container>
+          </ProfileBg>
+    }
+  </>
 )
+
+const mapStateToProps = state => ({
+  profile: state.profile,
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(Profile)
