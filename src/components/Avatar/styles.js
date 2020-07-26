@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import variables from '../../styles/variables'
 
 export const Container = styled.div`
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
