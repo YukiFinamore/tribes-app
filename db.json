@@ -35,6 +35,11 @@
     	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
     	"comments": 10,
     	"author": { "id": 5, "name": "Arthur Ronny" }
-    },
+    }
   ],
+
+  "profile": {
+    "id": 1, 
+    "name": "Yuki Finamore"
+  }
 }
