@@ -1,11 +1,9 @@
 import React from 'react'
 import { Container } from './styles'
-import user from '../../assets/images/users/yuki.png'
 
-
-const Avatar = ({}) => (
+const Avatar = ({img}) => (
   <Container>
-    <img src={user}></img> 
+    <img src={img}></img> 
   </Container>
 )
 
