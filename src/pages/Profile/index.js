@@ -13,9 +13,9 @@ import camIcon from '../../assets/images/icons/cam.png'
 const ListItem = () => (
   <Link to="/feed">
   	<ListItemContainer>
-  		<img src={profileTopicIcon}></img> 
+  		<img src={profileTopicIcon} alt="Topic"></img> 
   		<p> Lorem Ipsum </p>
-  		<img src={dragIcon}></img>
+  		<img src={dragIcon} alt="Drag"></img>
   	</ListItemContainer>
   </Link>
 )
@@ -31,10 +31,10 @@ const Profile = ({profile}) => (
 
             <Container>
               <AvatarContainer>
-                <Avatar img={profile.image}/>
+                <Avatar img={profile.image} alt="Profile"/>
 
                 <CamIcon>
-                  <img src={camIcon}></img>
+                  <img src={camIcon} alt="Cam"></img>
                 </CamIcon>
               </AvatarContainer>
 

@@ -6,7 +6,7 @@ import commentIcon from '../../assets/images/icons/comment.png'
 const TopicWithBg = ({post}) => (
   <Container>
     <TopicBg>
-      <img src={post.background}></img> 
+      <img src={post.background} alt="Background"></img> 
     </TopicBg>
 
     <TopicInfos>
@@ -15,7 +15,7 @@ const TopicWithBg = ({post}) => (
       </h2>
 
       <CommentsContainer>
-        <img src={commentIcon}></img>
+        <img src={commentIcon} alt="Comments"></img>
 
         <p> {post.comments} </p>
       </CommentsContainer>
@@ -24,7 +24,7 @@ const TopicWithBg = ({post}) => (
     <TopicAuthor>
       {
         post.author.image !== "" ? (
-          <Avatar img={post.author.image}/>    
+          <Avatar img={post.author.image} alt="Author"/>    
         ) : (
           <AvatarDefault>
             <p> {post.author.name.match(/\b(\w)/g).join('')} </p>

@@ -2,9 +2,9 @@ import React from 'react'
 import { Container } from './styles'
 import loaderIcon from '../../assets/images/icons/loader.gif'
 
-const Loader = ({}) => (
+const Loader = () => (
   <Container>
-    <img src={loaderIcon}></img> 
+    <img src={loaderIcon} alt="Loader"></img> 
   </Container>
 )
 

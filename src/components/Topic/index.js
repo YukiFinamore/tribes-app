@@ -15,7 +15,7 @@ const Topic = ({post}) => (
       </p>
 
       <CommentsContainer>
-        <img src={commentIcon}></img>
+        <img src={commentIcon} alt="Comments"></img>
 
         <p> {post.comments} </p>
       </CommentsContainer>

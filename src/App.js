@@ -5,7 +5,7 @@ import Routes from './routes'
 import GeneralStyles from './styles/general'
 import FontStyles from './styles/fonts'
 
-const App = ({}) => (
+const App = () => (
   <>
     <BrowserRouter>
     	<GeneralStyles />

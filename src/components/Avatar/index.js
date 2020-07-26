@@ -3,7 +3,7 @@ import { Container } from './styles'
 
 const Avatar = ({img}) => (
   <Container>
-    <img src={img}></img> 
+    <img src={img} alt="Profile"></img> 
   </Container>
 )
 

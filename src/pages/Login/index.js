@@ -26,7 +26,7 @@ const Form = ({signInFetching, profile, history}) => {
         <Label>Senha</Label>
         <PasswordInputContainer>
       	  <PasswordInput/>
-      		<img src={eyeIcon}></img>
+      		<img src={eyeIcon} alt="Show Password"></img>
         </PasswordInputContainer>
       </FormGroup>
 
@@ -40,7 +40,7 @@ const Form = ({signInFetching, profile, history}) => {
 const Login = ({signInFetching, profile, history}) => (
   <LoginBg>
   	<LogoContainer>
-  		<img src={logo}></img>
+  		<img src={logo} alt="Tribes Logo"></img>
   	</LogoContainer>
   	
   	<Form
