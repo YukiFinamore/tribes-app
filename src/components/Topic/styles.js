@@ -93,3 +93,23 @@ export const TopicAuthor = styled.div`
     }
   }
 `;
+
+export const AvatarDefault = styled.div`
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px !important;
+    border-radius: 100px;
+    overflow: hidden;
+    background: ${variables.bgPurple};
+
+    p {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-top: 0;
+    }
+  }
+`; 
