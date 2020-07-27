@@ -39,7 +39,7 @@ To run your fake api using JSON Server open another tab in your terminal inside 
 json-server --watch db.json --port 3004
 ```
 
-## Some Tools used
+## Some used tools
 * Duck Patterns - [more infos](https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/)
 * Styled Components - [more infos](https://styled-components.com/docs/basics)
 * Redux - [more infos](https://redux.js.org/basics/usage-with-react)
