@@ -1,68 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tribes App (Test)
 
-## Available Scripts
+The purpose of project is show the experience with Front-End technics and some respective tools.
 
-In the project directory, you can run:
+## Installing
 
-### `yarn start`
+Clone the project on your directory with this command line:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+git clone git@github.com:YukiFinamore/tribes-app.git
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+By default we are using [JSON Server](https://github.com/typicode/json-server) to simulate a fake api. You can access the `operation` config on `src/operation/api.js`. Fake infos can be configured on `db.json` on the root of project.
 
-### `yarn test`
+## Starting with React
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project works with:
+* Node v10.15.3 - [installation guide](https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/)
 
-### `yarn build`
+After make sure this prerequisites are installed and configured, inside the directory project, run on your terminal:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+If you got success message, run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm start
+```
 
-### `yarn eject`
+If you got a message calling to run the project on another port because `localhost:3000` is already running, just run `Yes` on your terminal.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Starting JSON Server
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run your fake api using JSON Server open another tab in your terminal inside your application folder and run this command line:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+json-server --watch db.json --port 3004
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Some Tools used
+* Duck Patterns - [more infos](https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/)
+* Styled Components - [more infos](https://styled-components.com/docs/basics)
+* Redux - [more infos](https://redux.js.org/basics/usage-with-react)
+* Redux Saga - [more infos](https://redux-saga.js.org/)
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+With the project running, access on your browser [localhost](http:localhost:3000) (Default localhost)
+On your root path (first screen), you can Login on your fake account. You'll be redirect to Profile page and your fake user infos will be saved and showed on this screen via Redux. The Profile page have a fake topic list where if you click in some topic you'll be redirect to Feed page. On this page we'll collect and show all topic posts according fake api, also via Redux.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+That's all :)
 
-### Code Splitting
+## Authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* **Yuki Finamore** - [github](https://github.com/YukiFinamore)
